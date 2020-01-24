@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="background_subtractor.h" />
+    <ClInclude Include="BGSeparate.h" />
+    <ClInclude Include="BGR2CommunicatorPatterns.h" />
+    <ClInclude Include="BRComplementary.h" />
+    <ClInclude Include="BRSeparate.h" />
+    <ClInclude Include="BGRCommunicator2Spatial.h" />
+    <ClInclude Include="BGRCommunicator4.h" />
+    <ClInclude Include="BGRSpatialCommunicator.h" />
+    <ClInclude Include="concurrent_queue.h" />
+    <ClInclude Include="Hamming.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="HUECommnunicator.h" />
+    <ClInclude Include="livecv.h" />
+    <ClInclude Include="mygl.h" />
+    <ClInclude Include="OldCommunicator.h" />
+    <ClInclude Include="Properties.h" />
+    <ClInclude Include="Parameters.h" />
+    <ClInclude Include="ReedSolomon.h" />
+    <ClInclude Include="BGRCommunicator.h" />
+    <ClInclude Include="RGBSpatialRedundancy.h" />
+    <ClInclude Include="GRSeparate.h" />
+    <ClInclude Include="schifra_crc.hpp" />
+    <ClInclude Include="schifra_ecc_traits.hpp" />
+    <ClInclude Include="schifra_erasure_channel.hpp" />
+    <ClInclude Include="schifra_error_processes.hpp" />
+    <ClInclude Include="schifra_fileio.hpp" />
+    <ClInclude Include="schifra_galois_field.hpp" />
+    <ClInclude Include="schifra_galois_field_element.hpp" />
+    <ClInclude Include="schifra_galois_field_polynomial.hpp" />
+    <ClInclude Include="schifra_galois_utilities.hpp" />
+    <ClInclude Include="schifra_reed_solomon_bitio.hpp" />
+    <ClInclude Include="schifra_reed_solomon_block.hpp" />
+    <ClInclude Include="schifra_reed_solomon_codec_validator.hpp" />
+    <ClInclude Include="schifra_reed_solomon_decoder.hpp" />
+    <ClInclude Include="schifra_reed_solomon_encoder.hpp" />
+    <ClInclude Include="schifra_reed_solomon_file_decoder.hpp" />
+    <ClInclude Include="schifra_reed_solomon_file_encoder.hpp" />
+    <ClInclude Include="schifra_reed_solomon_file_interleaver.hpp" />
+    <ClInclude Include="schifra_reed_solomon_general_codec.hpp" />
+    <ClInclude Include="schifra_reed_solomon_interleaving.hpp" />
+    <ClInclude Include="schifra_reed_solomon_product_code.hpp" />
+    <ClInclude Include="schifra_reed_solomon_speed_evaluator.hpp" />
+    <ClInclude Include="schifra_sequential_root_generator_polynomial_creator.hpp" />
+    <ClInclude Include="schifra_utilities.hpp" />
+    <ClInclude Include="SelectByMouse.h" />
+    <ClInclude Include="Communicator.h" />
+    <ClInclude Include="SplitAmplitudeCommunicator.h" />
+    <ClInclude Include="SplitScreenAmpDifferenceCommunicator.h" />
+    <ClInclude Include="SplitScreenCommunicator.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="VideoStabilizer.h" />
+    <ClInclude Include="WaveGenerator.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C2F709F-9656-42D7-A10E-D5E69669CC71}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <ProjectName>VLC_Prototype</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(MSBuildProjectDirectory);D:\opencv\build\include;D:\opencv\build\include\opencv;$(IncludePath)</IncludePath>
+    <TargetName>VLC_tester</TargetName>
+    <OutDir>C:\VLC\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\opencv\build\include;D:\opencv\build\include\opencv;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <TargetName>VLC_tester</TargetName>
+    <OutDir>C:\VLC\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\opencv\build\x86\vc12\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core249d.lib;opencv_imgproc249d.lib;opencv_highgui249d.lib;opencv_ml249d.lib;opencv_video249d.lib;opencv_features2d249d.lib;opencv_calib3d249d.lib;opencv_objdetect249d.lib;opencv_contrib249d.lib;opencv_legacy249d.lib;opencv_flann249d.lib;opencv_videostab249d.lib;opencv_nonfree249d.lib;opencv_stitching249d.lib;opencv_superres249d.lib;opencv_ocl249d.lib;opencv_ts249d.lib;opencv_photo249d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\opencv\build\x86\vc12\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core249.lib;opencv_imgproc249.lib;opencv_highgui249.lib;opencv_ml249.lib;opencv_video249.lib;opencv_features2d249.lib;opencv_calib3d249.lib;opencv_objdetect249.lib;opencv_contrib249.lib;opencv_legacy249.lib;opencv_flann249.lib;opencv_videostab249.lib;opencv_nonfree249.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
